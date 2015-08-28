@@ -1,0 +1,86 @@
+@cherset "utf-8";
+
+/*全体のスタイルはここから*/
+
+html {
+    background-image: url(../images/back2.png);
+}
+nav {
+    float: left;
+    list-style-type: none;
+    font-size: 20px;
+    margin-right: 20px;
+    background-color: #FCE8FF;
+}
+#messege {
+    overflow: hidden;
+    background-color: #FCE8FF;
+    width: 750px;
+    padding-left: 50px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*全体のスタイルはここまで*/
+
+
+/*トップページここから*/
+
+
+/*トップページここまで*/
+
+
+/*選手一覧ここから*/
+
+
+/*選手一覧ここまで*/
+
+
+/*個人成績ここから*/
+
+#seiseki {
+    background-color: #FCE8FF;
+    width: 950px;
+    float: right;
+}
+.mozi {
+    color: red;
+}
+
+/*個人成績ここまで*/
+
+
+/*スケジュールここから*/
+
+#day1 {
+    width: 250px;
+    float: left;
+    overflow: hidden;
+}
+#day2 {
+    width: 250px;
+    float: left;
+}
+#day3 {
+    width: 250px;
+    float: right;
+}
+#meeting1 {
+    width: 800px;
+    float: right;
+    margin-right: 10%;
+}
+
+/*スケジュールここまで*/
+
+
+/*お問い合わせここから*/
+
+#mozi2 {
+    color: red;
+    font-size: 25px;
+}
+
+/*お問い合わせここまで*/

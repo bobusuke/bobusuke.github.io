@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>筑紫野フィールダーズ＿掲示板</title>
+    <script src='https://cdn.mlkcca.com/v2.0.0/milkcocoa.js'></script>
+    <script src="js/jquery-2.1.4.js"></script>
+    <script src="js/board.js"></script>
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onLoad="loadMessage()">
+    
+    <nav>
+        <a href="index.html"><img src="images/rogo.gif" width="225px" height="225px"></a>
+        <ul>
+            <li>
+                <a href="index.html"><img src="images/image1.jpg" width="50px" height="50px">トップページ</a>
+            </li>
+            <li>
+                <a href="member.html"><img src="images/image1.jpg" width="50px" height="50px">部員一覧</a>
+            </li>
+            <li>
+                <a href="meeting.html"><img src="images/image1.jpg" width="50px" height="50px">大会成績</a>
+            </li>
+            <li>
+                <a href="individual.html"><img src="images/image1.jpg" width="50px" height="50px">個人成績</a>
+            </li>
+            <li>
+                <a href="schedule.html"><img src="images/image1.jpg" width="50px" height="50px">今後のスケジュール</a>
+            </li>
+            <li>
+                <a href="board.html"><img src="images/image1.jpg" width="50px" height="50px">連絡掲示板</a>
+            </li>
+            <li>
+                <a href="rinku.html"><img src="images/image1.jpg" width="50px" height="50px">リンク</a>
+            </li>
+            <li>
+                <a href="contact.html"><img src="images/image1.jpg" width="50px" height="50px">お問い合わせ</a>
+            </li>
+        </ul>
+    </nav>
+    <p align="center" style="font-size:x-large; color:#555555;">連絡掲示板</p>
+    <p align="center">連絡はここから</p>
+    <p align="center"><a href="">ホームページへ戻る</a></p>
+    <!--    <form method="POST" action="ここに投稿したあとのページURLを載せる" name="f1" accept-charset="utf-8">-->
+    <form>
+        <table width="750" border="0" align="center" cellpadding="5" cellspacing="0" class="mes" summary="投稿フォーム">
+            <tr>
+                <td align="right" nowrap>名前</td>
+                <td>
+                    <input id="name" name="name" type="text" style="width:300px;">
+                </td>
+            </tr>
+            <tr>
+                <td align="right" nowrap>タイトル</td>
+                <td>
+                    <input id="sub" name="sub" type="text" style="width:300px;">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">メッセージ
+                    <br>
+                </td>
+                <td>
+                    <textarea id="mes" name="mes" rows="6" style="width:480px;"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">削除キー</td>
+                <td>
+                    <input id="key" name="key" type="password" style="width:80px;"> クッキー
+                    <input type="checkbox" name="ccheck" checked>
+                    <input type="reset" name="Submit" value="リセット">
+                    <button name="button" onClick="clickEvent()">投稿する</button>
+<!--                    <button name="button">投稿する</button>-->
+                    <ul id="board"></ul>
+                </td>
+            </tr>
+        </table>
+<!--
+        <input type="hidden" name="mode" value="msg">
+        <input type="hidden" name="pot" value="2075023791682">
+        <input type="hidden" name="id" value="50">
+-->
+    </form>
+<!--    <input type="button" onClick="getJson()" value="test">-->
+    <table id="board_messages" width="750" border="0" align="center" cellpadding="5" cellspacing="0" class="mes">
+        <tr>
+            <td class="text" style="width:120px;">タイトル</td>
+            <td class="text" style="width:100px;">投稿者</td>
+<!--            <td class="text" style="width:60px;">リンク</td>-->
+            <td class="text" style="width:200px;">メッセージ</td>
+        </tr>
+
+    </table>
+
+    <div>
+
+    </div>
+        <footer>
+        <img src="images/sen.png">
+        <p>軟式野球チーム 筑紫野フィールダーズ</p>
+        <p>サイト管理者：池 拓磨</p>
+    </footer>
+</body>
+
+</html>

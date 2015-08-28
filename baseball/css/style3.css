@@ -1,0 +1,17 @@
+body,
+td,
+th {
+    font-size: 18px;
+}
+.mes {
+    background-color: #F0E090;
+    border: 1px solid #999999;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.text {
+    text-align: left;
+}
+.answer {
+    text-align: center;
+}
