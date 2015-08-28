@@ -6,28 +6,30 @@
     <title>針摺ゆめロード店</title>
     <script src="js/jquery-2.1.4.js"></script>
     <script src="js/jquery-dateFormat.js"></script>
-<!--    <script src="js/java.js"></script>-->
+    <!--    <script src="js/java.js"></script>-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animes.css">
-    <link rel="stylesheet" href="css/loading.css">
+        <link rel="stylesheet" href="css/animes.css">
+<!--    <link rel="stylesheet" href="css/loading.css">-->
     <script type="text/javascript">
-        jQuery(function($){
+        jQuery(function($) {
             $('.accordionLister dd').hide();
-            $(function(){
+            $(function() {
                 $('.showExcerpt').on('click', function() {
-                    if($(this).parent().find('dd').css('display') == 'none'){
+                    if ($(this).parent().find('dd').css('display') == 'none') {
                         $(this).parent().find('dd').show();
                     } else {
                         $(this).parent().find('dd').hide();
                     }
-              });
+                });
             });
- 
+
         });
-        </script>
+
+    </script>
 </head>
 
 <body>
+    <!--
     <div id="loading">
         <div class="type-textbound">
             <span class="textbound1"><img src="images/mozi1.png"></span>
@@ -37,6 +39,7 @@
             <span class="textbound5"><img src="images/mozi5.png"></span>
         </div>
     </div>
+-->
     <div id="top">
         <a href="index.html"><img src="images/rogo.png" width="1000px" height="500px" alt="ここにお店の画像を貼る"></a>
     </div>
@@ -124,18 +127,17 @@
                 </tr>
             </table>
         </div>
-        <div id="inshop">
-            <h2>動画</h2>
-            <!--            <iframe width="200" height="150" src="https://www.youtube.com/watch?v=IVBQAqy2jyw&app=desktop" frameborder="0" allowfullscreen></iframe>-->
-            <!--
+
+        <!--            <iframe width="200" height="150" src="https://www.youtube.com/watch?v=IVBQAqy2jyw&app=desktop" frameborder="0" allowfullscreen></iframe>-->
+        <!--
             <iframe class="youtube-player" type="text/html" width="200" height="150" 
 src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0">
 -->
-            <!--</iframe>-->
+        <!--</iframe>-->
 
-            <p>ホームページはここから</p>
-        </div>
+        <p>ホームページはここから</p>
     </div>
+
     <div class="rogo">
         <div id="image1">
             <a href="sell.html"><img src="images/sell.png" alt="セール情報の画像"></a>
@@ -169,7 +171,7 @@ src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0">
         <img src="images/sen.png">
         <div id="haneko">
             <h2><img src="images/title1.png" alt="はねことまもる"></h2>
-            
+
             <dl class="accordionLister">
                 <dt class="showExcerpt">こんな時はないでしょうか? ←ココをClick!</dt>
                 <dd>
