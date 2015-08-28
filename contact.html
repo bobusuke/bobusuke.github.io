@@ -4,39 +4,11 @@
 <head>
     <meta charset="utf-8">
     <title>針摺ゆめロード店</title>
-    <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/jquery-dateFormat.js"></script>
-<!--    <script src="js/java.js"></script>-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animes.css">
-    <link rel="stylesheet" href="css/loading.css">
-    <script type="text/javascript">
-        jQuery(function($){
-            $('.accordionLister dd').hide();
-            $(function(){
-                $('.showExcerpt').on('click', function() {
-                    if($(this).parent().find('dd').css('display') == 'none'){
-                        $(this).parent().find('dd').show();
-                    } else {
-                        $(this).parent().find('dd').hide();
-                    }
-              });
-            });
- 
-        });
-        </script>
 </head>
 
 <body>
-    <div id="loading">
-        <div class="type-textbound">
-            <span class="textbound1"><img src="images/mozi1.png"></span>
-            <span class="textbound2"><img src="images/mozi2.png"></span>
-            <span class="textbound3"><img src="images/mozi3.png"></span>
-            <span class="textbound4"><img src="images/mozi4.png"></span>
-            <span class="textbound5"><img src="images/mozi5.png"></span>
-        </div>
-    </div>
     <div id="top">
         <a href="index.html"><img src="images/rogo.png" width="1000px" height="500px" alt="ここにお店の画像を貼る"></a>
     </div>
@@ -89,8 +61,8 @@
                 <tr>
                     <td align="center" height="18" bgcolor="#FFCC99" style="color: #666666;">9</td>
                     <td align="center" bgcolor="#FFFFFF" style="color: #666666;">10</td>
-                    <td align="center" bgcolor="#FFFFFF" style="color: #666666;">11</td>
-                    <td align="center" bgcolor="#FF3300" style="color: #FFFFFF;">12</td>
+                    <td align="center" bgcolor="#FF3300" style="color: #FFFFFF;">11</td>
+                    <td align="center" bgcolor="#FFFFFF" style="color: #666666;">12</td>
                     <td align="center" bgcolor="#FFFFFF" style="color: #666666;">13</td>
                     <td align="center" bgcolor="#FFFFFF" style="color: #666666;">14</td>
                     <td align="center" bgcolor="#FFFFFF" style="color: #666666;">15</td>
@@ -125,15 +97,10 @@
             </table>
         </div>
         <div id="inshop">
-            <h2>動画</h2>
-            <!--            <iframe width="200" height="150" src="https://www.youtube.com/watch?v=IVBQAqy2jyw&app=desktop" frameborder="0" allowfullscreen></iframe>-->
-            <!--
-            <iframe class="youtube-player" type="text/html" width="200" height="150" 
-src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0">
--->
-            <!--</iframe>-->
-
-            <p>ホームページはここから</p>
+            <h2>リンク</h2>
+            
+                <p>ホームページはここから</p>
+           
         </div>
     </div>
     <div class="rogo">
@@ -150,43 +117,48 @@ src="http://www.youtube.com/embed/VIDEO_ID" frameborder="0">
         <div id="main">
             <h1>トップページ</h1>
 
-            <div id="sub">
-                <h2>ようこそ針摺ゆめロード店へ</h2>
-                <img src="images/rogo3.gif" width="650px" alt="ここに店内の写真を貼る">
+            <div id="input">
+                <article>
+                    <h1>お問い合わせ</h1>
+                    <p>お問い合わせは、下記フォームよりお気軽にお寄せください。</p>
+                    <ul>
+                        <li>必要事項を記入し、「確認する」をクリックしてください。</li>
+                        <li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+                    </ul>
+                    <form action="#">
+                        <p>
+                            <label>お名前（必須）
+                                <br>
+                                <input type="text" name="name" required>
+                            </label>
+                        </p>
+                        <p>
+                            <label>メールアドレス（必須）
+                                <br>
+                                <input type="email" name="mail" required>
+                            </label>
+                        </p>
+                        <p>お問い合わせ種類
+                            <br>
+                            <label>
+                                <input type="radio" name="kind" value="0">事前のご相談</label>
+                            <label>
+                                <input type="radio" name="kind" value="1">その他</label>
+                        </p>
+                        <p>
+                            <label>内容
+                                <br>
+                                <textarea name="comment"></textarea>
+                            </label>
+                        </p>
+                        <p>
+                            <input type="submit" value="確認する">
+                        </p>
+                    </form>
+                </article>
             </div>
-            <img src="images/sen.png">
-            <div id="inshop">
-                <h2>おかげさまで営業20周年を迎えることができました。</h2>
-                <img src="images/rogo2.gif" alt="店長の写真">
-            </div>
-            <p>朝10時までに受付を済まされましたお客様は</p>
-            <p>当日の夕方6時に仕上がり予定となっております。</p>
-            <p>※但し、水曜日は工場休日のため木曜日の仕上がりとなります。</p>
-            <p>また、配送車の到着時間が多少遅れる場合もございます。</p>
-            <p>その際は店舗まで確認・お問い合わせください。</p>
-
         </div>
-        <img src="images/sen.png">
-        <div id="haneko">
-            <h2><img src="images/title1.png" alt="はねことまもる"></h2>
-            
-            <dl class="accordionLister">
-                <dt class="showExcerpt">こんな時はないでしょうか? ←ココをClick!</dt>
-                <dd>
-                    <ol>・雨に濡れて　臭くなった</ol>
-                    <ol>・のり剥げになってブクブクになった</ol>
-                    <ol>・雨に濡れて　折り目がよれよれになった</ol>
-                    <ol>・水かお酒が黄ばみとして浮き上がってきた</ol>
-                    <ol>・汚れがすぐにシミになった(お茶・コーヒー・ワイン)</ol>
-                </dd>
-            </dl>
 
-
-            <h3>そんな衣類を<span class="text">雨</span>や<span class="text">汚れ</span>から守ります</h3>
-            <h3><span class="text">汚れてしまった場合でも汚れが落ちやすい</span></h3>
-            <h4>クリーニングした際に加工剤と汚れが一緒に洗い流され<br>汚れの付着を防ぎ、衣類を長持ちさせます</h4>
-            <h4>※<span class="text">素材の違い</span>や<span class="text">衣類のいたみ具合</span>などで効果に差があります。</h4>
-        </div>
     </div>
     <hr>
     <footer>

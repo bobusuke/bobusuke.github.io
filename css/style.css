@@ -1,0 +1,132 @@
+    @cherset "utf-8";
+    /*全体のスタイルはここから*/
+    
+    html body {
+        background-color: #EAD9FF;
+    }
+    #main {
+        width: 600px;
+    }
+    #top {
+        top: 0;
+        left: 0;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+    nav ul li#index_rogo a {
+        background-image: url(../images/nav1.png);
+    }
+    nav ul li#sell_rogo a {
+        background-image: url(../images/nav2.png);
+    }
+    nav ul li#shop_rogo a {
+        background-image: url(../images/nav3.png);
+    }
+    nav ul li#contact_rogo a {
+        background-image: url(../images/nav4.png);
+    }
+    nav {
+        width: 250px;
+        height: 176px;
+        margin: 0;
+        float: left;
+    }
+    #nav {
+        float: left;
+    }
+    ul {
+        list-style-type: none;
+        text-align: center;
+        margin: 0 0 20px 0;
+    }
+    li {
+        /*    display: inline-block;*/
+    }
+    nav ul li {
+        width: 210px;
+    }
+    nav ul li a {
+        display: block;
+        height: 0;
+        padding-top: 44px;
+        overflow: hidden;
+    }
+    #index #index_rogo a,
+    #sell #sell_rogo a,
+    #shop #shop_rogo a,
+    #contact #contact_rogo a,
+    nav ul li a:hover {
+        background-position: 0 -45px;
+    }
+    #day {
+        margin-top: 0;
+        float: left;
+        margin-left: 50px;
+    }
+    .rogo {
+        float: right;
+        overflow: hidden;
+        margin-right: 50px;
+    }
+    #text {
+        margin-left: 250px;
+        /*    text-align: center;*/
+    }
+    footer {
+        margin-left: 35%;
+        float: left;
+    }
+    #footer {
+        overflow: hidden;
+    }
+    #time {
+        color: red;
+    }
+    .footer {
+        /*
+    list-style-type: none;
+    text-align: center;
+    margin: 0 0 20px 0;
+    width: 210px;
+    display: block;
+    height: 0;
+    padding-top: 44px;
+    overflow: hidden;
+*/
+    }
+    /*
+a {
+    display: block;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+}
+*/
+/*全体のスタイルはここまで*/
+/*トップページここから*/
+    
+.text {
+        color: red;
+        font-size: 25px;
+}
+dl {
+        width: 700px;
+}
+dt {
+        font-weight: bold;
+        background-color: #ffc0cb;
+        margin-top: 10px;
+        padding: 5px;
+}
+dd {
+        background-color: #ffffe0;
+        margin-left: 0px;
+        padding: 5px;
+}
+/*トップページここまで*/
+/*割引情報ここから*/
+/*割引情報ここまで*/
+/*店舗案内ここから*/
+/*店舗案内ここまで*/
+/*お問い合わせここから*/
+/*お問い合わせここまで*/
