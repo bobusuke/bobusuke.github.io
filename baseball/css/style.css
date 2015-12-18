@@ -38,7 +38,12 @@ img {
 
 
 /*選手一覧ここから*/
-
+.win {
+    color: red;
+}
+.lose {
+    color: blue;
+}
 
 /*選手一覧ここまで*/
 
