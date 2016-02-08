@@ -3,56 +3,81 @@
 
 <head>
     <meta charset="utf-8">
-    <title>筑紫野フィールダーズ</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>筑紫野フィールダーズ＿リンク先</title>
+<!--    <link rel="stylesheet" href="css/style.css">-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css/css3.css">
+    
+    <script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 4000 );
+});
+</script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"><img src="images/rogo.gif" width="250px" height="250px"></a>
-        <ul>
-            <li>
-                <a href="index.html"><img src="images/image1.jpg" width="50px" height="50px">トップページ</a>
-            </li>
-            <li>
-                <a href="member.html"><img src="images/image1.jpg" width="50px" height="50px">部員一覧</a>
-            </li>
-            <li>
-                <a href="meeting.html"><img src="images/image1.jpg" width="50px" height="50px">大会成績</a>
-            </li>
-            <li>
-                <a href="individual.html"><img src="images/image1.jpg" width="50px" height="50px">個人成績</a>
-            </li>
-            <li>
-                <a href="schedule.html"><img src="images/image1.jpg" width="50px" height="50px">今後のスケジュール</a>
-            </li>
-            <li>
-                <a href="board.html"><img src="images/image1.jpg" width="50px" height="50px">連絡掲示板</a>
-            </li>
-            <li>
-                <a href="rinku.html"><img src="images/image1.jpg" width="50px" height="50px">リンク</a>
-            </li>
-            <li>
-                <a href="contact.html"><img src="images/image1.jpg" width="50px" height="50px">お問い合わせ</a>
-            </li>
+    <div id="header">
+        <a href="index.html" id="logo">CHIKUSHINO FIELDERS</a>
+        <ul id="menu">
+            <li><a href="index.html"><span>Top page</span></a></li>
+            <li><a href="member.html"><span>Member List</span></a></li>
+            <li><a href="meeting.html"><span>Tournament Results</span></a></li>
+            <li><a href="individual.html"><span>Career statistics</span></a></li>
+            <li><a href="rinku.html"><span>Link</span></a></li>
+            <li><a href="contact.html"><span>Inquiry</span></a></li>
         </ul>
-                <br>
+    </div>
+    <div id="sub">
+        <br>
+        <br>
         <ul>
                 <a href="http://px.a8.net/svt/ejp?a8mat=2HX130+CKHGJ6+50+2HTO1D" target="_blank">
                 <img border="0" width="125" height="125" alt="" src="http://www25.a8.net/svt/bgt?aid=151026876760&wid=001&eno=01&mid=s00000000018015087000&mc=1"></a>
                 <img border="0" width="1" height="1" src="http://www12.a8.net/0.gif?a8mat=2HX130+CKHGJ6+50+2HTO1D" alt="">
         </ul>
+        <br>
         <ul>
                 <a href="http://px.a8.net/svt/ejp?a8mat=2HX130+CJW0XE+1WW0+BXYE9" target="_blank">
 <img border="0" width="120" height="600" alt="" src="http://www21.a8.net/svt/bgt?aid=151026876759&wid=001&eno=01&mid=s00000008928002006000&mc=1"></a>
 <img border="0" width="1" height="1" src="http://www16.a8.net/0.gif?a8mat=2HX130+CJW0XE+1WW0+BXYE9" alt="">
         </ul>
-    </nav>
+    </div>
+    <br>
+    <h1>福岡県筑紫野市社会人軟式野球チーム</h1>
+    <h2>筑紫野フィールダーズ　リンク先</h2>
+<p id="slideshow">
+   <img src="images/battingu.png" alt="画像1" class="active">
+   <img src="images/patiing.png" alt="画像2">
+   <img src="images/sorega.png" alt="画像3">
+   <img src="images/title.png" alt="画像4">
+   <img src="images/main.jpg" alt="画像5">
+</p>
+    <br>
+    <hr>
+    <br>
+    <div class="update">
+
     <div id="messege">
-        <img src="images/rogo2.gif">
         <div id="title">
             <h1>リンクサイト</h1>
-            <img src="images/sen.png">
+
         </div>
         <div id="main">
             <h2>練習場所などのリンクを貼っております。</h2>
@@ -68,11 +93,32 @@
             <p><a href="http://bobusuke.github.io/">針摺ゆめロード公式サイト</a></p>
         </div>
     </div>
+
+</div>
+    <br>
+    <hr>
+    <br>
+
+
     <footer>
-        <img src="images/sen.png">
+        <h2>サイトマップ</h2>
+        <ul class="example">
+            <li><a href="index.html"><img src="images/nav.jpg" alt="トップページ"></a></li>
+            <li><a href="member.html"><img src="images/nav2.jpg" alt="部員一覧"></a></li>
+            <li><a href="meeting.html"><img src="images/nav3.jpg" alt="大会成績"></a></li>
+            <li><a href="individual.html"><img src="images/nav4.jpg" alt="個人成績"></a></li>
+            <li><a href="rinku.html"><img src="images/nav5.jpg" alt="リンク先"></a></li>
+            <li><a href="contact.html"><img src="images/nav6.jpg" alt="お問い合わせ"></a></li>
+        </ul>
         <p>軟式野球チーム 筑紫野フィールダーズ</p>
         <p>サイト管理者：池 拓磨</p>
     </footer>
 </body>
 
 </html>
+
+
+
+
+
+

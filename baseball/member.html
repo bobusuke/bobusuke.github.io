@@ -1,58 +1,68 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+    <head>
     <meta charset="utf-8">
     <title>筑紫野フィールダーズ＿部員一覧</title>
-    <link rel="stylesheet" href="css/style.css">
+<!--    <link rel="stylesheet" href="css/style.css">-->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css/css3.css">
+    
+    <script type="text/javascript">
+function slideSwitch() {
+   var $active = $('#slideshow img.active');
+
+   if ( $active.length == 0 ) $active = $('#slideshow img:last');
+
+   var $next =  $active.next().length ? $active.next()
+      : $('#slideshow img:first');
+
+   $active.addClass('last-active');
+
+   $next.css({opacity: 0.0})
+      .addClass('active')
+      .animate({opacity: 1.0}, 1000, function() {
+           $active.removeClass('active last-active');
+      });
+}
+
+$(function() {
+   setInterval( "slideSwitch()", 4000 );
+});
+</script>
 </head>
 
 <body>
-    <nav>
-        <a href="index.html"><img src="images/rogo.gif" width="250px" height="250px"></a>
-        <ul>
-            <li>
-                <a href="index.html"><img src="images/image1.jpg" width="50px" height="50px">トップページ</a>
-            </li>
-            <li>
-                <a href="member.html"><img src="images/image1.jpg" width="50px" height="50px">部員一覧</a>
-            </li>
-            <li>
-                <a href="meeting.html"><img src="images/image1.jpg" width="50px" height="50px">大会成績</a>
-            </li>
-            <li>
-                <a href="individual.html"><img src="images/image1.jpg" width="50px" height="50px">個人成績</a>
-            </li>
-            <li>
-                <a href="schedule.html"><img src="images/image1.jpg" width="50px" height="50px">今後のスケジュール</a>
-            </li>
-            <li>
-                <a href="board.html"><img src="images/image1.jpg" width="50px" height="50px">連絡掲示板</a>
-            </li>
-            <li>
-                <a href="rinku.html"><img src="images/image1.jpg" width="50px" height="50px">リンク</a>
-            </li>
-            <li>
-                <a href="contact.html"><img src="images/image1.jpg" width="50px" height="50px">お問い合わせ</a>
-            </li>
+    <div id="header">
+        <a href="index.html" id="logo">CHIKUSHINO FIELDERS</a>
+        <ul id="menu">
+            <li><a href="index.html"><span>Top page</span></a></li>
+            <li><a href="member.html"><span>Member List</span></a></li>
+            <li><a href="meeting.html"><span>Tournament Results</span></a></li>
+            <li><a href="individual.html"><span>Career statistics</span></a></li>
+            <li><a href="rinku.html"><span>Link</span></a></li>
+            <li><a href="contact.html"><span>Inquiry</span></a></li>
         </ul>
-                <br>
+    </div>
+    <div id="sub">
+        <br>
+        <br>
         <ul>
                 <a href="http://px.a8.net/svt/ejp?a8mat=2HX130+CKHGJ6+50+2HTO1D" target="_blank">
                 <img border="0" width="125" height="125" alt="" src="http://www25.a8.net/svt/bgt?aid=151026876760&wid=001&eno=01&mid=s00000000018015087000&mc=1"></a>
                 <img border="0" width="1" height="1" src="http://www12.a8.net/0.gif?a8mat=2HX130+CKHGJ6+50+2HTO1D" alt="">
         </ul>
+        <br>
         <ul>
                 <a href="http://px.a8.net/svt/ejp?a8mat=2HX130+CJW0XE+1WW0+BXYE9" target="_blank">
 <img border="0" width="120" height="600" alt="" src="http://www21.a8.net/svt/bgt?aid=151026876759&wid=001&eno=01&mid=s00000008928002006000&mc=1"></a>
 <img border="0" width="1" height="1" src="http://www16.a8.net/0.gif?a8mat=2HX130+CJW0XE+1WW0+BXYE9" alt="">
         </ul>
-    </nav>
-    <div id="messege">
-        <img src="images/rogo2.gif">
+    </div>
+    <br>
+    <h1>福岡県筑紫野市社会人軟式野球チーム</h1>
+    <h2>筑紫野フィールダーズ　部員一覧</h2>
         <div id="title">
             <h1>部員一覧</h1>
-            <img src="images/sen.png">
         </div>
         <div id="main">
             <div class="member">
@@ -64,6 +74,8 @@
                         <td>イメージ</td>
                         <td>守備</td>
                         <td>係</td>
+                        <td>前回の成績</td>
+                        <td>今年の抱負</td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>1</b></td>
@@ -74,20 +86,22 @@
                         </td>
                         <td align=center>変則サイドスロー高津</td>
                         <td align=center>投手・二塁手</td>
-                        <td align=center>キャプテン
-                        </td>
+                        <td align=center>キャプテン</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300 ><strong>初完封</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>2</b></td>
-                        <td align=center width=50><b>不明</b></td>
+                        <td align=center width=50><b>56番</b></td>
                         <td align=center nowrap>
                             <p><a href="">大渕 岬</a></p>
                             <a href=""><img src="menber/kari.gif" alt=""></a>
                         </td>
                         <td align=center>チームのウンディーネ</td>
                         <td align=center>マネージャー</td>
-                        <td align=center>マネージャー
-                        </td>
+                        <td align=center>マネージャー</td>
+                        <td align=center width=200>－－－－－－－－</td>
+                        <td align=center width=300><strong>選手をサポートできるように<br>頑張ります！</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>3</b></td>
@@ -98,8 +112,9 @@
                         </td>
                         <td align=center>まさに巨人の小林選手</td>
                         <td align=center>捕手・二塁手</td>
-                        <td align=center>マネージャー補佐（正）
-                        </td>
+                        <td align=center>マネージャー補佐（正）</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>打率３割突破</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>4</b></td>
@@ -110,8 +125,9 @@
                         </td>
                         <td align=center>トリプルスリーの逸材</td>
                         <td align=center>三塁手・投手</td>
-                        <td align=center>マネージャー補佐（副）
-                        </td>
+                        <td align=center>マネージャー補佐（副）</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>全力プレーでチームの<br>勝利に貢献する</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>5</b></td>
@@ -121,9 +137,10 @@
                             <a href=""><img src="images/ike.gif" alt=""></a>
                         </td>
                         <td align=center>あっという間に監督に</td>
-                        <td align=center>一塁手・外野</td>
-                        <td align=center>道具係（正）
-                        </td>
+                        <td align=center>一塁手・捕手</td>
+                        <td align=center>道具係（正）</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>怪我人が出ませんように</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>6</b></td>
@@ -134,20 +151,22 @@
                         </td>
                         <td align=center>立浪並みの打撃センス</td>
                         <td align=center>捕手・外野</td>
-                        <td align=center>道具係（副）
-                        </td>
+                        <td align=center>道具係（副）</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>ここにコメント</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>7</b></td>
-                        <td align=center width=50><b>不明</b></td>
+                        <td align=center width=50><b>5番</b></td>
                         <td align=center nowrap>
                             <p><a href="">大賀 秀一</a></p>
                             <a href=""><img src="images/ooga.gif" alt=""></a>
                         </td>
                         <td align=center>まさに男ではなく「漢」</td>
                         <td align=center>遊撃手・外野</td>
-                        <td align=center>所属なし
-                        </td>
+                        <td align=center>所属なし</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>３割３本３盗塁</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>8</b></td>
@@ -157,9 +176,10 @@
                             <a href=""><img src="images/takakura.gif" alt=""></a>
                         </td>
                         <td align=center>筑紫野の今宮 健太　<br>GG賞取れます</td>
-                        <td align=center>三塁手・遊撃手</td>
-                        <td align=center>イベント係？（副）
-                        </td>
+                        <td align=center>投手・遊撃手</td>
+                        <td align=center>イベント係？（副）</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>エースで４番</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>9</b></td>
@@ -170,8 +190,9 @@
                         </td>
                         <td align=center>来期は二刀流</td>
                         <td align=center>外野手・投手</td>
-                        <td align=center>所属なし
-                        </td>
+                        <td align=center>所属なし</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>打率３割</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>10</b></td>
@@ -182,35 +203,25 @@
                         </td>
                         <td align=center>チームの専属モデル</td>
                         <td align=center>遊撃手・二塁手</td>
-                        <td align=center>所属なし
-                        </td>
+                        <td align=center>所属なし</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>打率と出塁率上げるぞ！！</strong></td>
                     </tr>
                     <tr>
                         <td align=center width=50><b>11</b></td>
-                        <td align=center width=50><b>不明</b></td>
-                        <td align=center nowrap>
-                            <p><a href="">磯部 司</a></p>
-                            <a href=""><img src="menber/kari.gif" alt=""></a>
-                        </td>
-                        <td align=center>練習と試合にきてね</td>
-                        <td align=center>不明</td>
-                        <td align=center>所属なし
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center width=50><b>12</b></td>
-                        <td align=center width=50><b>不明</b></td>
+                        <td align=center width=50><b>25番</b></td>
                         <td align=center nowrap>
                             <p><a href="">柾木 浩太朗</a></p>
                             <a href=""><img src="menber/kari.gif" alt=""></a>
                         </td>
                         <td align=center>家庭教師ヒットマン</td>
                         <td align=center>一塁手・二塁手</td>
-                        <td align=center>イベント係？（正）
-                        </td>
+                        <td align=center>イベント係？（正）</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>ホームランを１本打つ</strong></td>
                     </tr>
                     <tr>
-                        <td align=center width=50><b>13</b></td>
+                        <td align=center width=50><b>12</b></td>
                         <td align=center width=50><b>不明</b></td>
                         <td align=center nowrap>
                             <p><a href="">野中 悠矢</a></p>
@@ -218,35 +229,25 @@
                         </td>
                         <td align=center>投げ方マジ藤川</td>
                         <td align=center>捕手・投手</td>
-                        <td align=center>所属なし
-                        </td>
+                        <td align=center>所属なし</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>闘志溌剌</strong>(とうしはつらつ)</td>
                     </tr>
                     <tr>
-                        <td align=center width=50><b>14</b></td>
-                        <td align=center width=50><b>不明</b></td>
-                        <td align=center nowrap>
-                            <p><a href="">湯之谷 秀治</a></p>
-                            <a href=""><img src="menber/kari.gif" alt=""></a>
-                        </td>
-                        <td align=center>弱点はありません。</td>
-                        <td align=center>捕手・投手</td>
-                        <td align=center>所属なし
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center width=50><b>15</b></td>
-                        <td align=center width=50><b>不明</b></td>
+                        <td align=center width=50><b>13</b></td>
+                        <td align=center width=50><b>27番</b></td>
                         <td align=center nowrap>
                             <p><a href="">多々良 仁隆</a></p>
                             <a href=""><img src="menber/kari.gif" alt=""></a>
                         </td>
                         <td align=center>チームゆるキャラに任命</td>
                         <td align=center>外野手</td>
-                        <td align=center>所属なし
-                        </td>
+                        <td align=center>所属なし</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>九州１位ゆるキャラ</strong></td>
                     </tr>
                     <tr>
-                        <td align=center width=50><b>16</b></td>
+                        <td align=center width=50><b>14</b></td>
                         <td align=center width=50><b>不明</b></td>
                         <td align=center nowrap>
                             <p><a href="">塩満 博史</a></p>
@@ -254,22 +255,24 @@
                         </td>
                         <td align=center>イチロー超えのレーザービーム</td>
                         <td align=center>外野手</td>
-                        <td align=center>所属なし
-                        </td>
+                        <td align=center>所属なし</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>ここにコメント</strong></td>
                     </tr>
-<!--
                     <tr>
-                        <td align=center width=50><b>17</b></td>
+                        <td align=center width=50><b>15</b></td>
                         <td align=center width=50><b>不明</b></td>
                         <td align=center nowrap>
-                            <p><a href="">石橋 壱心</a></p>
+                            <p><a href="">本村 僚平</a></p>
                             <a href=""><img src="menber/kari.gif" alt=""></a>
                         </td>
                         <td align=center>データなし</td>
-                        <td align=center>不明</td>
-                        <td align=center>所属なし
-                        </td>
+                        <td align=center>外野手</td>
+                        <td align=center>所属なし</td>
+                        <td align=center width=200>〇/〇　〇打数〇安打</td>
+                        <td align=center width=300><strong>レギュラー定着（笑）</strong></td>
                     </tr>
+<!--
                     <tr>
                         <td align=center width=50><b>18</b></td>
                         <td align=center width=50><b>不明</b></td>
@@ -296,15 +299,24 @@
                     </tr>
 -->
                 </table>
-                <p><a href="member.html">このページのトップへ</a></p>
-                <p><a href="index.html">トップページ<img src="images/top.gif" width="25px" height="25px"></a></p>
+                <p><a href="#top">このページのトップへ</a></p>
             </div>
         </div>
-    </div>
     <footer>
-        <img src="images/sen.png">
+        <h2>サイトマップ</h2>
+        <ul class="example">
+            <li><a href="index.html"><img src="images/nav.jpg" alt="トップページ"></a></li>
+            <li><a href="member.html"><img src="images/nav2.jpg" alt="部員一覧"></a></li>
+            <li><a href="meeting.html"><img src="images/nav3.jpg" alt="大会成績"></a></li>
+            <li><a href="individual.html"><img src="images/nav4.jpg" alt="個人成績"></a></li>
+            <li><a href="rinku.html"><img src="images/nav5.jpg" alt="リンク先"></a></li>
+            <li><a href="contact.html"><img src="images/nav6.jpg" alt="お問い合わせ"></a></li>
+        </ul>
         <p>軟式野球チーム 筑紫野フィールダーズ</p>
+        <p>サイト管理者：池 拓磨</p>
     </footer>
 </body>
+
+
 
 </html>
